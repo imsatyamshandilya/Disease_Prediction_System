@@ -464,7 +464,7 @@ def NaiveBayes():
 
 # Tk class is used to create a root window
 root.configure(background='Ivory')
-root.title('Smart Disease Prediction System')
+root.title('BioOracle')
 root.resizable(0, 0)
 
 # taking first input as symptom
@@ -526,12 +526,14 @@ def Exit():
 
 # Headings for the GUI written at the top of GUI
 w2 = Label(root, justify=LEFT,
-           text="Smart Disease Prediction System", fg="Red", bg="Ivory")
+           text="BioOracle", fg="Red", bg="Ivory")
 w2.config(font=("Times", 30, "bold italic"))
 w2.grid(row=1, column=0, columnspan=2, padx=100)
-w2 = Label(root, justify=LEFT, text="", fg="Pink", bg="Ivory")
-w2.config(font=("Times", 30, "bold italic"))
-w2.grid(row=2, column=0, columnspan=2, padx=100)
+
+w3 = Label(root, justify=LEFT,
+           text="A Smart Disease Prediction System", fg="Blue", bg="Ivory")
+w3.config(font=("Times", 10, "italic"))
+w3.grid(row=2, column=0, columnspan=2, padx=100)
 
 # Label for the name
 NameLb = Label(root, text="Name of the Patient", fg="Red", bg="Ivory")
